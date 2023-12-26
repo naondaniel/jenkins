@@ -4,6 +4,6 @@ node {
         git branch:'master', url: 'https://github.com/naondaniel/DevOps0609.git'
     }
     stage("execute"){
-        sh "python3 DevOps0609/main.py"
+        sh "python3 main.py"
     }
 }
