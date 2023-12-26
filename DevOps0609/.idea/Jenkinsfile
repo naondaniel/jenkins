@@ -1,9 +1,0 @@
-properties([pipelineTriggers([pollSCM('* * * * *')])])
-node {
-    stage("clone"){
-        git branch:'master', url: 'https://github.com/naondaniel/DevOps0609.git'
-    }
-    stage("execute"){
-        sh "python3 DevOps0609/1.py"
-    }
-}
